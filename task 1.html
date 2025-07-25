@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="intern 1.css"/>
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>Image Gallery</h1>
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="culture">Culture</button>
+      <button data-filter="automobiles">Automobiles</button>
+    </div>
+
+    <!-- Gallery Grid: 30 Images Total, with Category Markings -->
+    <div class="gallery-grid">
+      <!-- NATURE: 20 sample images -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2024/02/23/21/25/landscape-8592826_960_720.jpg" alt="Nature Tree"><div class="caption">Cozy Green Tree</div>
+        <a href="https://cdn.pixabay.com/photo/2024/02/23/21/25/landscape-8592826_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2021/01/08/17/56/river-5900547_960_720.jpg" alt="River"><div class="caption">Mountain River View</div>
+        <a href="https://cdn.pixabay.com/photo/2021/01/08/17/56/river-5900547_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" alt="Forest Avenue"><div class="caption">Forest Avenue</div>
+        <a href="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2022/04/15/07/58/sunset-7133867_1280.jpg" alt="Sunset view"><div class="caption">Sunset view</div>
+        <a href="https://cdn.pixabay.com/photo/2022/04/15/07/58/sunset-7133867_1280.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2024/12/28/03/39/field-9295186_960_720.jpg" alt="Field sunlight view"><div class="caption">Field sunlight view</div>
+        <a href="https://cdn.pixabay.com/photo/2024/12/28/03/39/field-9295186_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2017/08/16/01/23/desert-2646209_960_720.jpg" alt="desert nature view"><div class="caption">Desert Nature View</div>
+        <a href="https://cdn.pixabay.com/photo/2017/08/16/01/23/desert-2646209_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2022/11/27/13/22/tree-7619791_960_720.jpg" alt="Autumn color tree"><div class="caption">Autumn color tree</div>
+        <a href="https://cdn.pixabay.com/photo/2022/11/27/13/22/tree-7619791_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg" alt="Fantasy butterflies"><div class="caption">Fantasy butterflies</div>
+        <a href="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2018/05/11/23/33/forest-3392077_960_720.jpg" alt="Forest fog view"><div class="caption">Forest fog view</div>
+        <a href="https://cdn.pixabay.com/photo/2018/05/11/23/33/forest-3392077_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <!-- ...17 more nature gallery items, follow the same format... -->
+      <!-- CULTURE: 20 sample images -->
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2024/02/25/19/25/invalidendom-8596490_960_720.jpg" alt="Cultural Building">
+        <div class="caption">Historic Architecture</div>
+        <a href="https://cdn.pixabay.com/photo/2024/02/25/19/25/invalidendom-8596490_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="culture">
+        <img src="https://images.unsplash.com/photo-1680695919965-06633e4c2e14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Celebration">
+        <div class="caption">Japanese Festival</div>
+        <a href="https://images.unsplash.com/photo-1680695919965-06633e4c2e14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2022/01/25/07/48/africa-6965543_960_720.jpg" alt="African Culture">
+        <div class="caption">Traditional Africa</div>
+        <a href="https://cdn.pixabay.com/photo/2022/01/25/07/48/africa-6965543_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2018/11/02/23/03/india-3791219_960_720.jpg" alt="Indian Culture">
+        <div class="caption">India's culture</div>
+        <a href="https://cdn.pixabay.com/photo/2018/11/02/23/03/india-3791219_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2020/03/23/08/37/woman-4959896_960_720.jpg" alt="Chinese Culture">
+        <div class="caption">China's culture</div>
+        <a href="https://cdn.pixabay.com/photo/2020/03/23/08/37/woman-4959896_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2016/12/23/10/06/russia-1927095_960_720.jpg" alt="Russian Culture">
+        <div class="caption">Russia's culture</div>
+        <a href="https://cdn.pixabay.com/photo/2016/12/23/10/06/russia-1927095_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2022/12/21/00/12/eagle-hunter-7668878_960_720.jpg" alt="Mongolian Culture">
+        <div class="caption">Mongolia's culture</div>
+        <a href="https://cdn.pixabay.com/photo/2022/12/21/00/12/eagle-hunter-7668878_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2010/12/21/05/09/ghost-town-3874_960_720.jpg" alt="Western Culture">
+        <div class="caption">Western culture</div>
+        <a href="https://cdn.pixabay.com/photo/2010/12/21/05/09/ghost-town-3874_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <!-- ...17 more culture gallery items... -->
+      <!-- AUTOMOBILES: 20 sample images -->
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2019/07/07/14/03/fiat-500-4322521_960_720.jpg" alt="Classic Car">
+        <div class="caption">Red Classic Car</div>
+        <a href="https://cdn.pixabay.com/photo/2019/07/07/14/03/fiat-500-4322521_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2017/04/24/00/16/car-2255161_960_720.jpg" alt="Vintage Car"><div class="caption">Vintage Style</div>
+        <a href="https://cdn.pixabay.com/photo/2017/04/24/00/16/car-2255161_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2020/12/01/18/06/porsche-911-gt2-5795128_960_720.jpg" alt="Blue Sports Car"><div class="caption">Blue Sports Model</div>
+        <a href="https://cdn.pixabay.com/photo/2020/12/01/18/06/porsche-911-gt2-5795128_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <!-- ...17 more automobile gallery items... -->
+      <!-- EXTRA: 10 more for "all" but single categories each, for a total of 30 unique photos in the All-section. Use nature, culture, or automobile items, or add unique items -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg" alt="Nature Highway"><div class="caption">Nature Highway</div>
+        <a href="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="culture">
+        <img src="https://cdn.pixabay.com/photo/2017/06/11/12/45/mijas-2392323_960_720.jpg" alt="Spanish Village"><div class="caption">Spanish Village</div>
+        <a href="https://cdn.pixabay.com/photo/2017/06/11/12/45/mijas-2392323_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2014/07/02/19/39/safari-382383_960_720.jpg" alt="Offroad Cruiser"><div class="caption">Offroad Cruiser</div>
+        <a href="https://cdn.pixabay.com/photo/2014/07/02/19/39/safari-382383_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2020/01/16/18/29/ferrari-4771347_960_720.jpg" alt="ferrari"><div class="caption">Ferrari's model</div>
+        <a href="https://cdn.pixabay.com/photo/2020/01/16/18/29/ferrari-4771347_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2019/07/13/13/30/pagani-4334803_960_720.jpg" alt="track car"><div class="caption">Pagani's model</div>
+        <a href="https://cdn.pixabay.com/photo/2019/07/13/13/30/pagani-4334803_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2020/02/03/10/07/lamborghini-4815249_1280.jpg" alt="racing car"><div class="caption">Lamborghini's model</div>
+        <a href="https://cdn.pixabay.com/photo/2020/02/03/10/07/lamborghini-4815249_1280.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2016/05/06/16/32/car-1376190_960_720.jpg" alt="race car"><div class="caption">Ford gt</div>
+        <a href="https://cdn.pixabay.com/photo/2016/05/06/16/32/car-1376190_960_720.jpg" class="download-btn" download>Download</a>
+      </div>
+
+      <div class="gallery-item" data-category="automobiles">
+        <img src="https://cdn.pixabay.com/photo/2020/01/26/18/52/porsche-4795517_1280.jpg" alt="race car"><div class="caption">porsche</div>
+        <a href="https://cdn.pixabay.com/photo/2020/01/26/18/52/porsche-4795517_1280.jpg" class="download-btn" download>Download</a>
+      </div>
+      <!-- ...add enough of these "single" category items to reach a total of 30 photos in the .gallery-grid... -->
+
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="fullscreen" id="fullscreen-btn">⛶</button>
+    <button class="zoom-in" id="zoom-in-btn">+</button>
+    <button class="zoom-out" id="zoom-out-btn">−</button>
+    <button class="prev" id="prev-btn">&#10094;</button>
+    <button class="next" id="next-btn">&#10095;</button>
+    <a href="#" id="download-link" download class="download-btn">Download</a>
+  </div>
+
+  <footer class="footer">
+    <div>
+      Built by <span class="author-name">Jashanpreet Singh</span>
+      <p><a href="https://github.com/jashansingh07" target="_blank">GitHub Profile</a></p>
+      <p><a href="https://www.linkedin.com/in/jashanpreet-singh-bajwa-668ab936a/" target="_blank">LinkedIn Profile</a></p>
+      <p><a href="https://www.instagram.com/jashxn_singh_/" target="_blank">instagram</a></p>
+      <p><a href="https://jashanbajwa-9175e9.netlify.app/" target="_blank">Portfolio</a></p>
+    </div>
+  </footer>
+
+
+  <script src="task 1.js"></script>
+</body>
+</html>
